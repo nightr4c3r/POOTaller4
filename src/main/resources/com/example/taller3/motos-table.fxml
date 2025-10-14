@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.taller3.Controllers.MotosTableController">
+    <top>
+        <HBox spacing="16" style="-fx-background-color: #2c3e50; -fx-padding: 12;">
+            <Label text="Motos" style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <Button text="Volver" onAction="#onBackClick" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="12" style="-fx-padding: 16;">
+            <TableView fx:id="motosTable" prefHeight="400" prefWidth="600">
+                <columns>
+                    <TableColumn fx:id="placaCol" text="Placa" prefWidth="200" />
+                    <TableColumn fx:id="marcaCol" text="Marca" prefWidth="200" />
+                    <TableColumn fx:id="modeloCol" text="Modelo" prefWidth="200" />
+                </columns>
+            </TableView>
+            <Label fx:id="emptyLabel" text="No hay motos registradas." visible="false" style="-fx-text-fill: #7f8c8d;" />
+        </VBox>
+    </center>
+</BorderPane>

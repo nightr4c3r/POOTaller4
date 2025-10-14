@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.taller3.Controllers.AddMotoController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <Label text="Agregar nueva Moto" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+
+    <GridPane hgap="10" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" minWidth="100" />
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <children>
+            <Label text="Placa:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+            <TextField fx:id="placaField" promptText="ABC123" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+            <Label text="Marca:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <TextField fx:id="marcaField" promptText="Yamaha" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+            <Label text="Modelo:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+            <TextField fx:id="modeloField" promptText="MT-07" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+        </children>
+    </GridPane>
+
+    <HBox spacing="10">
+        <Button text="Guardar" onAction="#onSaveClick" />
+        <Button text="Cancelar" onAction="#onCancelClick" />
+    </HBox>
+</VBox>
