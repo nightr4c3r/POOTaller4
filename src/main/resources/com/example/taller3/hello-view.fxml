@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.taller3.HelloController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-  </padding>
+<VBox alignment="CENTER" spacing="16.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.taller3.Controllers.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
 
-  <Label fx:id="welcomeText"/>
-  <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Label text="Bienvenido a la App de Motos" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+    <Label fx:id="motoCountLabel" text="Total motos: 0" />
+
+    <Button fx:id="addMotoButton" text="Agregar Moto" onAction="#onAddMotoClick" />
+    <Button text="Ver motos" onAction="#onShowAllClick" />
+    <Button text="Actualizar conteo" onAction="#onRefreshClick" />
 </VBox>

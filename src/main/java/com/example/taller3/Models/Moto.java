@@ -1,6 +1,5 @@
-package com.example.taller3;
+package com.example.taller3.Models;
 
-import javafx.scene.Scene;
 import java.util.ArrayList;
 
 
@@ -55,11 +54,6 @@ public class Moto {
 
     @Override
     public String toString() {
-        return "Moto{" +
-                "placa='" + placa + '\'' +
-                ", marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", motos=" + motos +
-                '}';
+        return "Moto{" + "placa='" + placa + '\'' + ", marca='" + marca + '\'' + ", modelo='" + modelo + '\'' + ", motos=" + motos +'}';
     }
 }

@@ -1,5 +1,8 @@
-package com.example.taller3;
+package com.example.taller3.Controllers;
 
+import com.example.taller3.HelloApplication;
+import com.example.taller3.Models.Moto;
+import com.example.taller3.Repositories.MotoRepository;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
